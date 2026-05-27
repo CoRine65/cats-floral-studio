@@ -1,0 +1,45 @@
+.home-page {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.hero-section {
+  min-height: 100vh;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(4rem, 10vw, 9rem);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 0.9;
+}
+
+.hero-nav {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero-nav a:hover {
+  color: var(--text-primary);
+}
