@@ -22,3 +22,34 @@ body {
   background: var(--bg-primary);
   color: var(--text-primary);
 }
+
+/* font family testing */
+@font-face {
+  font-family: "StoryType";
+  src: url("/src/assets/fonts/StoryType.otf") format("opentype");
+} /*sub text*/
+
+@font-face {
+  font-family: "Eleanor";
+  src: url("/src/assets/fonts/Eleanor.otf") format("opentype");
+} /*cursive main*/
+
+@font-face {
+  font-family: "Overthinking";
+  src: url("/src/assets/fonts/Overthinking.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "BrittanySignature";
+  src: url("/src/assets/fonts/BrittanySignature.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Cervanttis";
+  src: url("/src/assets/fonts/Cervanttis.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Phenom";
+  src: url("/src/assets/fonts/PhenomGrotesque-Medium.ttf") format("truetype");
+} /*sub text*/

@@ -1,45 +1,62 @@
-.home-page {
-  min-height: 100vh;
-  background: var(--bg-primary);
-  color: var(--text-primary);
+:root {
+  --bg-primary: #1a1414;
+
+  --text-primary: #f3ebe4;
+  --text-muted: #c9b8ae;
 }
 
 .hero-section {
   min-height: 100vh;
-  padding: 2rem;
+  padding: 6rem 2rem 2rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
-  gap: 2rem;
+  gap: 1.6rem;
   text-align: center;
 }
 
 .hero-title {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(4rem, 10vw, 9rem);
+  font-family: "Overthinking";
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
   font-weight: 400;
-  letter-spacing: 0.03em;
-  line-height: 0.9;
+  letter-spacing: 0.01em;
+  line-height: 1;
+
+  margin-top: 8vh;
 }
 
 .hero-nav {
   display: flex;
-  gap: 2.5rem;
   justify-content: center;
   align-items: center;
+
+  gap: 3.25rem;
+
+  transform: translate(1.4rem, -0.7rem);
 }
 
 .hero-nav a {
   color: var(--text-muted);
   text-decoration: none;
-  font-size: 0.95rem;
-  letter-spacing: 0.18em;
+
+  font-size: 0.9rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
+
+  font-family: "Phenom";
+
+  transition:
+    color 180ms ease,
+    opacity 180ms ease;
+}
+
+.hero-nav a:first-child {
+  transform: translateX(-1rem);
 }
 
 .hero-nav a:hover {
   color: var(--text-primary);
+  opacity: 0.8;
 }
