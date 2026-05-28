@@ -1,8 +1,10 @@
 :root {
-  --bg-primary: #1a1414;
+  --bg-primary: #dbdde1;
 
-  --text-primary: #f3ebe4;
-  --text-muted: #c9b8ae;
+  --text-primary: #645b5b;
+  --text-muted: #918983;
+
+  --text-hover: #06085c;
 }
 
 .hero-section {
@@ -53,10 +55,14 @@
 }
 
 .hero-nav a:first-child {
-  transform: translateX(-1rem);
+  transform: translateX(-1.8rem);
+}
+
+.hero-nav a:nth-child(2) {
+  transform: translateX(1rem);
 }
 
 .hero-nav a:hover {
-  color: var(--text-primary);
+  color: var(--text-hover);
   opacity: 0.8;
 }
