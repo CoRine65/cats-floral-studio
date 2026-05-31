@@ -8,6 +8,8 @@
 }
 
 .hero-section {
+  position: relative;
+
   min-height: 100vh;
   padding: 6rem 2rem 2rem;
 
@@ -65,4 +67,122 @@
 .hero-nav a:hover {
   color: var(--text-hover);
   opacity: 0.8;
+}
+
+/*header drop down*/
+.hero-title {
+  opacity: 0;
+  animation: titleDrop 900ms ease forwards;
+}
+
+.hero-nav {
+  opacity: 0;
+  animation: navFadeIn 700ms ease forwards;
+  animation-delay: 650ms;
+}
+
+/*floral arrangement*/
+
+.home-page {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.floral-arrangement {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -20px;
+
+  height: 420px;
+
+  overflow: visible;
+
+  /*border: 1px solid red;*/
+}
+
+.floral {
+  position: absolute;
+  bottom: 0;
+
+  max-width: 100%;
+  opacity: 0;
+  pointer-events: none;
+
+  transform: var(--start-transform);
+  animation: floralFadeIn 900ms ease forwards;
+}
+
+.floral-back-left {
+  left: 25%;
+  bottom: -60px;
+  width: 420px;
+  z-index: 1;
+
+  --final-transform: translateX(-180px);
+  --start-transform: translateX(-180px) translateY(18px) scale(0.96);
+
+  animation-delay: 1000ms;
+}
+
+.floral-back-middle {
+  left: 50%;
+  bottom: -60px;
+  width: 420px;
+
+  --final-transform: translateX(-50%);
+  --start-transform: translateX(-50%) translateY(18px) scale(0.96);
+
+  z-index: 2;
+  animation-delay: 1200ms;
+}
+
+.floral-back-right {
+  left: 70%;
+  bottom: -60px;
+  width: 420px;
+  z-index: 1;
+
+  --final-transform: translateX(-180px);
+  --start-transform: translateX(-180px) translateY(18px) scale(0.96);
+
+  animation-delay: 1000ms;
+}
+
+.floral-front-middle {
+  left: 50%;
+  bottom: -60px;
+  width: 350px;
+  z-index: 3;
+
+  --final-transform: translateX(-50%);
+  --start-transform: translateX(-50%) translateY(18px) scale(0.96);
+
+  animation-delay: 1500ms;
+}
+
+@keyframes titleDrop {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes navFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes floralFadeIn {
+  to {
+    opacity: 1;
+    transform: var(--final-transform);
+  }
 }
